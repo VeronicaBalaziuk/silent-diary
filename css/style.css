@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 .navigation {
     position: fixed;
     top: 0;
@@ -11,17 +10,14 @@
     z-index: 10;
 
     width: 100%;
-    background: #5F2F69; 
+    background: #5f2f69;
     color: white;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px
-
+    height: 40px;
 }
-
-
 
 /* Контейнер для випадаючого меню */
 .dropdown {
@@ -33,9 +29,9 @@
 .dropdown-content {
     display: none; /* Приховуємо за замовчуванням */
     position: absolute;
-    background-color: #5F2F69; /* Фіолетовий фон як у вашого хедера */
+    background-color: #5f2f69; /* Фіолетовий фон як у вашого хедера */
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 100;
     top: 100%; /* Показувати рівно під кнопкою */
     left: 0;
@@ -62,16 +58,12 @@
     display: block;
 }
 
-
-
-
-
 /* Виправляємо відступ між групою іконок та текстом меню */
-.left_navigation, 
+.left_navigation,
 .right_navigation {
     display: flex;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .left_navigation {
@@ -85,7 +77,7 @@
 .icons {
     display: flex;
     align-items: center;
-    gap: 30px !important; 
+    gap: 30px !important;
 }
 
 .icons img {
@@ -106,12 +98,11 @@
 .logo {
     width: 100px;
     flex: 0 0 auto;
-
 }
 
 /* Посилання */
 .navigation a {
-    color: #DFBBEC;
+    color: #dfbbec;
     text-decoration: none;
     font-size: 15px;
     letter-spacing: 1px;
@@ -120,48 +111,46 @@
 }
 
 .bk_image {
-    background-image: url('../image/bk_image.jpeg');
+    background-image: url("../image/bk_image.jpeg");
     background-size: cover;
     background-position: center;
-    height: 800px; 
-    
+    height: 800px;
+
     display: flex;
     flex-direction: column;
-    padding-left: 5%;   
+    padding-left: 5%;
     color: white;
 }
 
-
 .bk_image h1 {
-    font-family: 'Libre Bodoni', serif; 
-    font-size: 85px;       
-    font-weight: 400px;     
-    margin-bottom: 50px;   
-    line-height: 1.1;      
+    font-family: "Libre Bodoni", serif;
+    font-size: 85px;
+    font-weight: 400px;
+    margin-bottom: 50px;
+    line-height: 1.1;
 }
 
 .bk_image p {
-    font-size: 36px;       
-    margin-bottom: 40px;  
+    font-size: 36px;
+    margin-bottom: 40px;
 }
-
 
 .bk_image {
     height: 800px;
-    background-image: url('../image/bk_image.jpeg');
+    background-image: url("../image/bk_image.jpeg");
     background-size: cover;
     background-position: center;
-    
+
     display: flex;
     flex-direction: column;
-   justify-content: flex-start; 
-   padding-top: 150px; 
-    padding-left: 5%;      
+    justify-content: flex-start;
+    padding-top: 150px;
+    padding-left: 5%;
     color: white;
 }
 .bk_image {
     position: relative; /* Щоб текст позиціонувався відносно цього блоку */
-    overflow: hidden;    /* Ховаємо краї відео, що виступають */
+    overflow: hidden; /* Ховаємо краї відео, що виступають */
 }
 
 .video_background {
@@ -183,49 +172,44 @@
 
 /* КНОПКА */
 .round_btn {
-    display: flex; 
-    align-items: center;    
-    justify-content: center; 
-    width: 220px;           
-    height: 220px;          
-    border-radius: 50%;   
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+
     /* Кольори */
-    background: #5F2F69;    
-    color: #EBD5F3; 
-    
+    background: #5f2f69;
+    color: #ebd5f3;
+
     /* Текст всередині */
-    text-decoration: none;  
+    text-decoration: none;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     padding: 20px;
-    box-sizing: border-box; 
-    align-self: flex-start; 
-    
+    box-sizing: border-box;
+    align-self: flex-start;
+
     transition: 0.3s;
 }
 
 .round_btn:hover {
     transform: scale(1.1);
-    background: #4A2B4D;
+    background: #4a2b4d;
 }
 
-
-
-
-
-
-  /* Основна секція */
+/* Основна секція */
 .about_us {
-    background-color: #F4E2FB;
+    background-color: #f4e2fb;
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .about_container {
@@ -234,58 +218,55 @@
     max-width: 1250px;
     width: 95%;
     position: relative;
-    z-index: 5; 
+    z-index: 5;
 }
 
 /* Вертикальний заголовок */
 .vertical_title {
     text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 120px;
-    color: #5F2F69;
+    color: #5f2f69;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     margin: 0;
     line-height: 1;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 /* Блок з фото */
 .about_image {
-    position: relative; 
+    position: relative;
     flex-shrink: 0;
 }
 
 .about_image img {
-    max-width: 280px; 
+    max-width: 280px;
     height: auto;
     display: block;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
-
 
 .about_content {
     background: rgba(223, 187, 236, 0.3);
-    backdrop-filter: blur(1px);        
+    backdrop-filter: blur(1px);
     padding: 50px;
-    border-radius: 80px; 
-    margin-left: 0px; 
+    border-radius: 80px;
+    margin-left: 0px;
     position: relative;
-    z-index: 10;         
+    z-index: 10;
     max-width: 650px;
 }
 
-
 .about_content p {
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 25px;
     line-height: 1;
-    color: #5F2F69;
+    color: #5f2f69;
     margin-bottom: 10px;
     text-shadow: 2px 5px 5px rgba(95, 47, 105, 0.5);
 }
-
 
 /* ВІЗЕРУНКИ НА ФОНІ */
 .bg_pattern {
@@ -302,60 +283,62 @@
     padding: 250px;
     top: -500px;
     right: -260px;
-    background-image: url('../image/pattern2.png');
-   
+    background-image: url("../image/pattern2.png");
 }
 
 .pattern_left {
     padding: 100px;
     top: 20px;
     left: -200px;
-    background-image: url('../image/pattern2.png');
-    
+    background-image: url("../image/pattern2.png");
 }
 
-
-
-
-
-
-
 .shoes_section {
-    background-color: #F4E2FB;
+    background-color: #f4e2fb;
     padding: 40px 0;
 }
 
 .product_grid {
     display: flex;
-    justify-content: center; 
-    gap: 40px;               
-    max-width: 1200px;       
-    margin: 0 auto;        
-    padding: 0 60px;       
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
 }
 
 /* ЗАГАЛЬНІ СТИЛІ ДЛЯ КАРТКИ */
 .product_card {
-
-    background: linear-gradient(0deg, rgba(223, 187, 236, 0.6) 0%, rgba(255, 255, 255, 0.5) 100%);
-    background-color: transparent; 
-    width: calc(25% - 20px); 
+    background: linear-gradient(
+        0deg,
+        rgba(223, 187, 236, 0.6) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    background-color: transparent;
+    width: calc(25% - 20px);
     padding: 20px;
-    border-radius: 15px;      
-    box-sizing: border-box;  
-    box-shadow: 0 10px 30px rgba(95, 47, 105, 0.1); 
-    
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(95, 47, 105, 0.1);
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background 0.4s ease;
 }
 
 /*АНІМАЦІЯ ПРИ НАВЕДЕННІ НА КАРТКУ*/
 .product_card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 15px 40px rgba(95, 47, 105, 0.2); 
-    background: linear-gradient(0deg, rgba(223, 187, 236, 0.7) 0%, rgba(255, 255, 255, 0.8) 100%);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(95, 47, 105, 0.2);
+    background: linear-gradient(
+        0deg,
+        rgba(223, 187, 236, 0.7) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+    );
 }
 
 .product_img {
@@ -383,9 +366,9 @@
 }
 
 .product_info h3 {
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 18px;
-    color: #5F2F69;
+    color: #5f2f69;
     margin-bottom: 5px;
 }
 
@@ -395,50 +378,46 @@
     margin-bottom: 15px;
 }
 
-
 .price {
     font-weight: bold;
-    color: #5F2F69;
+    color: #5f2f69;
     font-size: 18px;
 }
 
-.section_title{
+.section_title {
     margin-bottom: 80px;
-text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
-    font-family: 'Libre Bodoni', serif;
+    text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
+    font-family: "Libre Bodoni", serif;
     font-size: 67px;
-    color: #5F2F69;
+    color: #5f2f69;
     margin: 30;
     line-height: 1;
     margin-left: 50px;
 }
 
-
-
-
 /* fghjk*/
 .you_image {
-    position: relative; 
+    position: relative;
     flex-shrink: 0;
 }
 
 .you_image img {
-    max-width: 600px; 
+    max-width: 600px;
     height: auto;
     display: block;
     position: relative;
-   
-    z-index: 10; 
+
+    z-index: 10;
 }
 .you_container {
-     margin: 0 auto;
+    margin: 0 auto;
     padding-right: 40px;
     display: flex;
     align-items: center;
     max-width: 1250px;
     width: 100%;
     position: relative;
-    z-index: 5; 
+    z-index: 5;
 }
 
 /* ВІЗЕРУНКИ НА ФОНІ gbnfyyz */
@@ -456,26 +435,20 @@ text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
     padding: 250px;
     top: -400px;
     right: -260px;
-    background-image: url('../image/pattern2.png');
-   
+    background-image: url("../image/pattern2.png");
 }
 
 .pattern_left2 {
     padding: 200px;
     top: 20px;
     left: -200px;
-    background-image: url('../image/pattern2.png');
-    
+    background-image: url("../image/pattern2.png");
 }
-
-
-
-
 
 .questions_section {
     position: relative;
     padding: 80px 0 0 0;
-    background-color: #F4E2FB;
+    background-color: #f4e2fb;
     overflow: hidden;
 }
 
@@ -497,8 +470,8 @@ text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
 }
 
 .question_item {
- background: rgba(223, 187, 236, 0.3);
-    backdrop-filter: blur(1px);  /* Напівпрозорий #EBD5F3 як у Figma */
+    background: rgba(223, 187, 236, 0.3);
+    backdrop-filter: blur(1px); /* Напівпрозорий #EBD5F3 як у Figma */
     margin-bottom: 20px;
     padding: 15px 25px;
     border-radius: 32px; /* Закруглення як на макеті */
@@ -515,10 +488,10 @@ text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
 
 .question_item p {
     font-weight: 500;
-     font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 25px;
     line-height: 1;
-    color: #5F2F69;
+    color: #5f2f69;
     margin-bottom: 2px;
     text-shadow: 2px 5px 5px rgba(95, 47, 105, 0.5);
 }
@@ -538,16 +511,16 @@ text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
 .questions_image img {
     max-width: 400px;
     display: block;
-     margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 /* ВЕРТИКАЛЬНИЙ ЗАГОЛОВОК */
 .questions_title {
     text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
     writing-mode: vertical-rl; /* Вертикальний текст */
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 110px;
-    color: #5F2F69;
+    color: #5f2f69;
     margin: 0;
     padding-bottom: 40px;
 }
@@ -567,33 +540,25 @@ text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
     padding: 255px;
     top: 20px;
     right: -260px;
-    background-image: url('../image/pattern2.png');
-   
+    background-image: url("../image/pattern2.png");
 }
 
 .pattern_left3 {
     padding: 200px;
     top: -580px;
     left: -200px;
-    background-image: url('../image/pattern2.png');
-    
+    background-image: url("../image/pattern2.png");
 }
 html {
     scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
 /* 1. Основні налаштування футера */
 .footer {
-    background-color: #5F2F69; 
+    background-color: #5f2f69;
     color: #ffffff;
     padding: 60px 0;
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
 }
 
 .footer_container {
@@ -603,7 +568,6 @@ html {
     justify-content: space-between;
     gap: 100px;
     padding: 0 50px;
-   
 }
 
 /* 2. Ліва частина з інформацією */
@@ -623,13 +587,12 @@ html {
 .logo2 {
     width: 250px;
     flex: 0 0 auto;
-
 }
 
 /* Колонки посилань (ПОКУПЦЯМ) */
-.footer_column h3, 
+.footer_column h3,
 .footer_contact h3 {
-    font-family: 'Libre Bodoni', sans-serif;
+    font-family: "Libre Bodoni", sans-serif;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -713,18 +676,17 @@ html {
     .footer_container {
         flex-direction: column;
     }
-    
-    .footer_top, .footer_bottom {
+
+    .footer_top,
+    .footer_bottom {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .footer_map {
         height: 300px;
     }
 }
-
-
 
 /* Основний фон вікна (прихований за замовчуванням) */
 .modal-overlay {
@@ -752,12 +714,12 @@ html {
     position: relative;
     border-radius: 4px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .modal-content h2 {
-    color: #5F2F69;
-    font-family: 'Libre Bodoni', serif;
+    color: #5f2f69;
+    font-family: "Libre Bodoni", serif;
     margin-bottom: 20px;
 }
 
@@ -770,11 +732,12 @@ html {
 .input-group label {
     display: block;
     font-size: 12px;
-    color: #5F2F69;
+    color: #5f2f69;
     margin-bottom: 5px;
 }
 
-.input-group input, .gender-select {
+.input-group input,
+.gender-select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -783,7 +746,7 @@ html {
 
 /* Кнопка */
 .auth-submit {
-    background: #5F2F69;
+    background: #5f2f69;
     color: white;
     border: none;
     width: 100%;
@@ -799,7 +762,7 @@ html {
     right: 15px;
     font-size: 24px;
     text-decoration: none;
-    color: #5F2F69;
+    color: #5f2f69;
 }
 
 .form-footer {
@@ -815,7 +778,7 @@ html {
 }
 
 .footer-links a {
-    color: #5F2F69;
+    color: #5f2f69;
     text-decoration: none;
 }
 .burger_icon {
@@ -824,7 +787,8 @@ html {
 
 /* АДАПТАЦІЯ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (екран до 768px) */
 @media (max-width: 768px) {
-    .about_image,.questions_image,
+    .about_image,
+    .questions_image,
     .you_image {
         display: none !important;
     }
@@ -833,7 +797,7 @@ html {
     .navigation {
         padding: 10px 20px;
         height: auto;
-         /* Лого та іконки один під одним */
+        /* Лого та іконки один під одним */
         gap: 15px;
     }
 
@@ -842,15 +806,16 @@ html {
         font-size: 12px; /* Зменшуємо шрифт */
     }
 
-    .left_navigation, .right_navigation {
+    .left_navigation,
+    .right_navigation {
         gap: 15px;
         width: 100%;
         justify-content: center;
     }
-    .left_navigation, .right_navigation a {
-     justify-content:space-between;
+    .left_navigation,
+    .right_navigation a {
+        justify-content: space-between;
     }
-
 
     /* 2. Головний екран (Hero Section) */
     .bk_image {
@@ -889,9 +854,6 @@ html {
         margin-bottom: 20px;
     }
 
-    
-
-   
     .about_content {
         padding: 25px;
         border-radius: 40px;
@@ -919,7 +881,6 @@ html {
     /* 5. Питання (FAQ) */
     .questions_container {
         flex-direction: column;
-
     }
 
     .questions_title {
@@ -928,7 +889,6 @@ html {
         text-align: center;
         margin-bottom: 30px;
     }
-
 
     .question_item p {
         font-size: 18px;
@@ -943,62 +903,61 @@ html {
 
 /* Основний контейнер */
 .about_us {
-    background-color: #F4E2FB;
+    background-color: #f4e2fb;
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .about_container {
     display: flex;
     /* ДОДАНО: дозволяє елементам перестрибувати на новий рядок */
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center; /* Центруємо, якщо елементи в колонці */
     max-width: 1250px;
     width: 95%;
     position: relative;
-    z-index: 5; 
+    z-index: 5;
 }
 
 /* Вертикальний заголовок */
 .vertical_title {
     text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
-    font-family: 'Libre Bodoni', serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 120px;
-    color: #5F2F69;
+    color: #5f2f69;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     margin: 0;
     line-height: 1;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 /* Блок з фото */
 .about_image {
-    position: relative; 
+    position: relative;
     flex-shrink: 0;
 }
 
 .about_image img {
-    max-width: 200px; 
+    max-width: 200px;
     height: auto;
     display: block;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
-
 
 .about_content {
     background: rgba(223, 187, 236, 0.3);
-    backdrop-filter: blur(1px);        
+    backdrop-filter: blur(1px);
     padding: 50px;
-    border-radius: 80px; 
-    margin-left: 20px; 
+    border-radius: 80px;
+    margin-left: 20px;
     position: relative;
-    z-index: 10;         
+    z-index: 10;
     max-width: 650px;
 }
 
@@ -1024,35 +983,40 @@ html {
         padding: 30px;
         border-radius: 40px;
     }
+}
 
 @media (max-width: 768px) {
+    .burger_icon {
+        display: block;
+    }
 
-.burger_icon {
-    display: block;
-}
+    .hert_icon {
+        display: none;
+    }
 
-.hert_icon{
-    display:none;
-}
+    header nav {
+        display: none;
+    }
 
-header nav {
-    display:none;
-} 
+    .footer_nav,
+    .social_item {
+        align-items: center;
+    }
 
-.footer_nav, .social_item{
-    align-items: center;
-}
+    .footer_container {
+        align-items: center;
+    }
 
-.footer_container {
-align-items: center;
-}
+    .footer_nav,
+    .footer_column a,
+    .footer_contact,
+    .text,
+    .social_item span {
+        text-align: center;
+    }
 
-.footer_nav, .footer_column a, .footer_contact, .text, .social_item span {
-text-align: center;
-}
-
-.you_container{
-    padding: 10px;
-    align-items: center
-}
+    .you_container {
+        padding: 10px;
+        align-items: center;
+    }
 }
