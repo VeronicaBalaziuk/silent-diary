@@ -1,0 +1,1058 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    background: #5F2F69; 
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px
+
+}
+
+
+
+/* Контейнер для випадаючого меню */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Стилі для самого випадаючого списку */
+.dropdown-content {
+    display: none; /* Приховуємо за замовчуванням */
+    position: absolute;
+    background-color: #5F2F69; /* Фіолетовий фон як у вашого хедера */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+    top: 100%; /* Показувати рівно під кнопкою */
+    left: 0;
+}
+
+/* Посилання всередині випадаючого меню */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: none; /* Щоб текст не був весь великими літерами */
+    font-size: 14px;
+    margin: 0; /* Прибираємо ваші зовнішні відступи для меню */
+}
+
+/* Ефект при наведенні на посилання в меню */
+.dropdown-content a:hover {
+    background-color: #4a2452;
+}
+
+/* ГОЛОВНЕ: Показуємо меню при наведенні на .dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* Виправляємо відступ між групою іконок та текстом меню */
+.left_navigation, 
+.right_navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.left_navigation {
+    justify-content: flex-start;
+}
+
+.right_navigation {
+    justify-content: flex-end;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 30px !important; 
+}
+
+.icons img {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.icons a {
+    margin: 0 !important; /* Прибирає зовнішні відступи, які можуть бути у посилань */
+    padding: 0;
+}
+/* Щоб іконки трохи підсвічувалися при наведенні */
+.icons a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.logo {
+    width: 100px;
+    flex: 0 0 auto;
+
+}
+
+/* Посилання */
+.navigation a {
+    color: #DFBBEC;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 40px;
+}
+
+.bk_image {
+    background-image: url('../image/bk_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 800px; 
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;   
+    color: white;
+}
+
+
+.bk_image h1 {
+    font-family: 'Libre Bodoni', serif; 
+    font-size: 85px;       
+    font-weight: 400px;     
+    margin-bottom: 50px;   
+    line-height: 1.1;      
+}
+
+.bk_image p {
+    font-size: 36px;       
+    margin-bottom: 40px;  
+}
+
+
+.bk_image {
+    height: 800px;
+    background-image: url('../image/bk_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start; 
+   padding-top: 150px; 
+    padding-left: 5%;      
+    color: white;
+}
+.bk_image {
+    position: relative; /* Щоб текст позиціонувався відносно цього блоку */
+    overflow: hidden;    /* Ховаємо краї відео, що виступають */
+}
+
+.video_background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Відправляємо відео за текст */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Відео заповнює весь блок без деформації */
+}
+
+.bk_image {
+    background-image: none !important;
+}
+
+/* КНОПКА */
+.round_btn {
+    display: flex; 
+    align-items: center;    
+    justify-content: center; 
+    width: 220px;           
+    height: 220px;          
+    border-radius: 50%;   
+    
+    /* Кольори */
+    background: #5F2F69;    
+    color: #EBD5F3; 
+    
+    /* Текст всередині */
+    text-decoration: none;  
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 20px;
+    box-sizing: border-box; 
+    align-self: flex-start; 
+    
+    transition: 0.3s;
+}
+
+.round_btn:hover {
+    transform: scale(1.1);
+    background: #4A2B4D;
+}
+
+
+
+
+
+
+  /* Основна секція */
+.about_us {
+    background-color: #F4E2FB;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.about_container {
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    width: 95%;
+    position: relative;
+    z-index: 5; 
+}
+
+/* Вертикальний заголовок */
+.vertical_title {
+    text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
+    font-family: 'Libre Bodoni', serif;
+    font-size: 120px;
+    color: #5F2F69;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    line-height: 1;
+    margin-right: 10px; 
+}
+
+/* Блок з фото */
+.about_image {
+    position: relative; 
+    flex-shrink: 0;
+}
+
+.about_image img {
+    max-width: 280px; 
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; 
+}
+
+
+.about_content {
+    background: rgba(223, 187, 236, 0.3);
+    backdrop-filter: blur(1px);        
+    padding: 50px;
+    border-radius: 80px; 
+    margin-left: 0px; 
+    position: relative;
+    z-index: 10;         
+    max-width: 650px;
+}
+
+
+.about_content p {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 25px;
+    line-height: 1;
+    color: #5F2F69;
+    margin-bottom: 10px;
+    text-shadow: 2px 5px 5px rgba(95, 47, 105, 0.5);
+}
+
+
+/* ВІЗЕРУНКИ НА ФОНІ */
+.bg_pattern {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.pattern_right {
+    padding: 250px;
+    top: -500px;
+    right: -260px;
+    background-image: url('../image/pattern2.png');
+   
+}
+
+.pattern_left {
+    padding: 100px;
+    top: 20px;
+    left: -200px;
+    background-image: url('../image/pattern2.png');
+    
+}
+
+
+
+
+
+
+
+.shoes_section {
+    background-color: #F4E2FB;
+    padding: 40px 0;
+}
+
+.product_grid {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;               
+    max-width: 1200px;       
+    margin: 0 auto;        
+    padding: 0 60px;       
+}
+
+/* ЗАГАЛЬНІ СТИЛІ ДЛЯ КАРТКИ */
+.product_card {
+
+    background: linear-gradient(0deg, rgba(223, 187, 236, 0.6) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background-color: transparent; 
+    width: calc(25% - 20px); 
+    padding: 20px;
+    border-radius: 15px;      
+    box-sizing: border-box;  
+    box-shadow: 0 10px 30px rgba(95, 47, 105, 0.1); 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+/*АНІМАЦІЯ ПРИ НАВЕДЕННІ НА КАРТКУ*/
+.product_card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 40px rgba(95, 47, 105, 0.2); 
+    background: linear-gradient(0deg, rgba(223, 187, 236, 0.7) 0%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.product_img {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product_img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.heart_icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.product_info h3 {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 18px;
+    color: #5F2F69;
+    margin-bottom: 5px;
+}
+
+.product_info p {
+    font-size: 13px;
+    color: #9c7ba1;
+    margin-bottom: 15px;
+}
+
+
+.price {
+    font-weight: bold;
+    color: #5F2F69;
+    font-size: 18px;
+}
+
+.section_title{
+    margin-bottom: 80px;
+text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
+    font-family: 'Libre Bodoni', serif;
+    font-size: 67px;
+    color: #5F2F69;
+    margin: 30;
+    line-height: 1;
+    margin-left: 50px;
+}
+
+
+
+
+/* fghjk*/
+.you_image {
+    position: relative; 
+    flex-shrink: 0;
+}
+
+.you_image img {
+    max-width: 600px; 
+    height: auto;
+    display: block;
+    position: relative;
+   
+    z-index: 10; 
+}
+.you_container {
+     margin: 0 auto;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    width: 100%;
+    position: relative;
+    z-index: 5; 
+}
+
+/* ВІЗЕРУНКИ НА ФОНІ gbnfyyz */
+.bg_pattern {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.pattern_right2 {
+    padding: 250px;
+    top: -400px;
+    right: -260px;
+    background-image: url('../image/pattern2.png');
+   
+}
+
+.pattern_left2 {
+    padding: 200px;
+    top: 20px;
+    left: -200px;
+    background-image: url('../image/pattern2.png');
+    
+}
+
+
+
+
+
+.questions_section {
+    position: relative;
+    padding: 80px 0 0 0;
+    background-color: #F4E2FB;
+    overflow: hidden;
+}
+
+.questions_container {
+    display: flex;
+    position: relative;
+    align-items: center; /* Вирівнюємо по низу, щоб модель стояла на лінії */
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* СПИСОК ПИТАНЬ */
+.questions_list {
+    flex: 1;
+    max-width: 700px;
+    margin-bottom: 50px; /* Відступ від низу */
+}
+
+.question_item {
+ background: rgba(223, 187, 236, 0.3);
+    backdrop-filter: blur(1px);  /* Напівпрозорий #EBD5F3 як у Figma */
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    border-radius: 32px; /* Закруглення як на макеті */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.question_item:hover {
+    background: rgba(200, 160, 210, 0.4);
+}
+
+.question_item p {
+    font-weight: 500;
+     font-family: 'Libre Bodoni', serif;
+    font-size: 25px;
+    line-height: 1;
+    color: #5F2F69;
+    margin-bottom: 2px;
+    text-shadow: 2px 5px 5px rgba(95, 47, 105, 0.5);
+}
+
+.q_arrow {
+    width: 10px;
+    height: auto;
+}
+
+/* МОДЕЛЬ */
+.questions_image {
+    flex-shrink: 0;
+    margin-left: -100px; /* Трохи насуваємо на питання для динаміки */
+    z-index: 2;
+}
+
+.questions_image img {
+    max-width: 400px;
+    display: block;
+     margin-bottom: 50px;
+}
+
+/* ВЕРТИКАЛЬНИЙ ЗАГОЛОВОК */
+.questions_title {
+    text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
+    writing-mode: vertical-rl; /* Вертикальний текст */
+    font-family: 'Libre Bodoni', serif;
+    font-size: 110px;
+    color: #5F2F69;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+/* ВІЗЕРУНКИ НА ФОНІ gbnfyyz */
+.bg_pattern {
+    position: absolute;
+    width: 500px;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.pattern_right3 {
+    padding: 255px;
+    top: 20px;
+    right: -260px;
+    background-image: url('../image/pattern2.png');
+   
+}
+
+.pattern_left3 {
+    padding: 200px;
+    top: -580px;
+    left: -200px;
+    background-image: url('../image/pattern2.png');
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* 1. Основні налаштування футера */
+.footer {
+    background-color: #5F2F69; 
+    color: #ffffff;
+    padding: 60px 0;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0 50px;
+   
+}
+
+/* 2. Ліва частина з інформацією */
+.footer_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.logo2 {
+    width: 250px;
+    flex: 0 0 auto;
+
+}
+
+/* Колонки посилань (ПОКУПЦЯМ) */
+.footer_column h3, 
+.footer_contact h3 {
+    font-family: 'Libre Bodoni', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer_column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.footer_column a:hover {
+    color: #ffffff;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer_nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Соцмережі */
+.social_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.social_item img {
+    width: 24px;
+    height: 24px;
+}
+
+.social_item span {
+    font-size: 14px;
+}
+
+.phone {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.working_hours {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: auto;
+}
+
+/* 4. Права частина - Карта */
+.footer_map {
+    flex: 1;
+    min-height: 400px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.footer_map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 992px) {
+    .footer_container {
+        flex-direction: column;
+    }
+    
+    .footer_top, .footer_bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer_map {
+        height: 300px;
+    }
+}
+
+
+
+/* Основний фон вікна (прихований за замовчуванням) */
+.modal-overlay {
+    display: none; /* Ховаємо вікно */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+/* показуємо вікно, коли на нього посилається URL (#authModal) */
+.modal-overlay:target {
+    display: block;
+}
+
+.modal-content {
+    background: white;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    position: relative;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.modal-content h2 {
+    color: #5F2F69;
+    font-family: 'Libre Bodoni', serif;
+    margin-bottom: 20px;
+}
+
+/* Поля вводу та селект */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    color: #5F2F69;
+    margin-bottom: 5px;
+}
+
+.input-group input, .gender-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Кнопка */
+.auth-submit {
+    background: #5F2F69;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Кнопка закриття (хрестик) */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #5F2F69;
+}
+
+.form-footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #5F2F69;
+    text-decoration: none;
+}
+.burger_icon {
+    display: none;
+}
+
+/* АДАПТАЦІЯ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (екран до 768px) */
+@media (max-width: 768px) {
+    .about_image,.questions_image,
+    .you_image {
+        display: none !important;
+    }
+
+    /* 1. Навігація */
+    .navigation {
+        padding: 10px 20px;
+        height: auto;
+         /* Лого та іконки один під одним */
+        gap: 15px;
+    }
+
+    .navigation a {
+        margin: 0 10px;
+        font-size: 12px; /* Зменшуємо шрифт */
+    }
+
+    .left_navigation, .right_navigation {
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    .left_navigation, .right_navigation a {
+     justify-content:space-between;
+    }
+
+
+    /* 2. Головний екран (Hero Section) */
+    .bk_image {
+        height: auto;
+        padding: 120px 20px 50px 20px; /* Більше відступу зверху через фіксоване меню */
+        text-align: center;
+    }
+
+    .bk_image h1 {
+        font-size: 37px; /* Зменшуємо гігантський заголовок */
+        margin-bottom: 20px;
+    }
+
+    .bk_image p {
+        font-size: 20px;
+    }
+
+    .round_btn {
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+        margin: 0 auto; /* Центруємо кнопку */
+        align-self: center;
+    }
+
+    /* 3. Секція "Про нас" */
+    .about_container {
+        flex-direction: column; /* Текст під картинкою */
+        text-align: center;
+    }
+
+    .vertical_title {
+        writing-mode: horizontal-tb; /* Робимо заголовок горизонтальним */
+        transform: rotate(0deg);
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    
+
+   
+    .about_content {
+        padding: 25px;
+        border-radius: 40px;
+        max-width: 100%;
+    }
+
+    /* 4. Сітка товарів */
+    .product_grid {
+        flex-direction: column; /* Картки в одну колонку */
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .product_card {
+        width: 100%; /* Картка на всю ширину */
+        max-width: 300px;
+    }
+
+    .section_title {
+        font-size: 36px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    /* 5. Питання (FAQ) */
+    .questions_container {
+        flex-direction: column;
+
+    }
+
+    .questions_title {
+        writing-mode: horizontal-tb;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+    .question_item p {
+        font-size: 18px;
+    }
+
+    /* 6. Модальне вікно */
+    .modal-content {
+        width: 85%; /* Щоб не вилізало за краї */
+        margin: 50px auto;
+    }
+}
+
+/* Основний контейнер */
+.about_us {
+    background-color: #F4E2FB;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.about_container {
+    display: flex;
+    /* ДОДАНО: дозволяє елементам перестрибувати на новий рядок */
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; /* Центруємо, якщо елементи в колонці */
+    max-width: 1250px;
+    width: 95%;
+    position: relative;
+    z-index: 5; 
+}
+
+/* Вертикальний заголовок */
+.vertical_title {
+    text-shadow: 5px 5px 5px rgba(95, 47, 105, 0.5);
+    font-family: 'Libre Bodoni', serif;
+    font-size: 120px;
+    color: #5F2F69;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    line-height: 1;
+    margin-right: 10px; 
+}
+
+/* Блок з фото */
+.about_image {
+    position: relative; 
+    flex-shrink: 0;
+}
+
+.about_image img {
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; 
+}
+
+
+.about_content {
+    background: rgba(223, 187, 236, 0.3);
+    backdrop-filter: blur(1px);        
+    padding: 50px;
+    border-radius: 80px; 
+    margin-left: 20px; 
+    position: relative;
+    z-index: 10;         
+    max-width: 650px;
+}
+
+/* --- АДАПТИВНІСТЬ --- */
+
+@media (max-width: 1024px) {
+    .about_container {
+        flex-direction: column; /* Вишиковуємо елементи в стовпчик */
+        text-align: center;
+    }
+
+    .vertical_title {
+        writing-mode: horizontal-tb;
+        transform: none;
+        font-size: 60px;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .about_content {
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 30px;
+        border-radius: 40px;
+    }
+
+@media (max-width: 768px) {
+
+.burger_icon {
+    display: block;
+}
+
+.hert_icon{
+    display:none;
+}
+
+header nav {
+    display:none;
+} 
+
+.footer_nav, .social_item{
+    align-items: center;
+}
+
+.footer_container {
+align-items: center;
+}
+
+.footer_nav, .footer_column a, .footer_contact, .text, .social_item span {
+text-align: center;
+}
+
+.you_container{
+    padding: 10px;
+    align-items: center
+}
+}
