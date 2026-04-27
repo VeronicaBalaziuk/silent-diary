@@ -50,16 +50,37 @@
                                 src="image/heart_ic.png"
                                 alt="wishlist"
                             />
+                        </a>
+                        <button class="burger_toggle">
                             <img
                                 class="burger_icon"
                                 src="image/burger_icon.png"
-                                alt="burger icon"
+                                alt="burger-icon-mobile-menu"
                             />
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
+
+        <div
+            id="mobile-nav-panel"
+            class="mobile-nav-panel"
+            aria-hidden="true"
+        >
+            <button type="button" class="mobile-nav-close" aria-label="Закрити">
+                ×
+            </button>
+            <nav class="mobile-nav-links">
+                <a href="#ABOUT US">ABOUT US</a>
+                <span class="mobile-nav-heading">CATALOG</span>
+                <a class="mobile-nav-sublink" href="#shoes">Взуття</a>
+                <a class="mobile-nav-sublink" href="#clothing">Одяг</a>
+                <a class="mobile-nav-sublink" href="#accessories">Аксесуари</a>
+                <a href="#questions">QUESTIONS</a>
+                <a href="#YOUR STORY">YOUR STORY?</a>
+            </nav>
+        </div>
 
         <main>
             <section>
@@ -526,5 +547,32 @@
                 </form>
             </div>
         </div>
+        <script>
+            (function () {
+                var btn = document.querySelector(".burger_toggle");
+                var panel = document.getElementById("mobile-nav-panel");
+                if (!btn || !panel) return;
+
+                function setOpen(on) {
+                    panel.classList.toggle("is-open", on);
+                    btn.setAttribute("aria-expanded", on ? "true" : "false");
+                    panel.setAttribute("aria-hidden", on ? "false" : "true");
+                    document.body.classList.toggle("mobile-menu-open", on);
+                }
+
+                btn.addEventListener("click", function () {
+                    setOpen(!panel.classList.contains("is-open"));
+                });
+
+                panel.addEventListener("click", function (e) {
+                    if (e.target.closest("a") || e.target.closest(".mobile-nav-close"))
+                        setOpen(false);
+                });
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape") setOpen(false);
+                });
+            })();
+        </script>
     </body>
 </html>
